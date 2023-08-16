@@ -1,0 +1,13 @@
+.imageContainer {
+  width: 20rem; /* Set your desired image width */
+  height: auto; /* Set your desired image height */
+  /* overflow: hidden; */
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

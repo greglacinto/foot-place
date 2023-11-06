@@ -20,13 +20,9 @@
   margin-bottom: 2rem; object-fit:cover;
 }
 
-.card-details {
-  /* position: absolute;
-  bottom: 0; */
-}
 
 .card-title {
-  margin-bottom: 1rem;
+  margin: -1px;
 }
 
 .card-reviews {

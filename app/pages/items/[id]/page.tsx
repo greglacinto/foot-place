@@ -1,21 +1,20 @@
 'use client'
-import Button from '@/app/components/Button'
+import Footer from '@/app/components/Footer'
 import Header from '@/app/components/Header'
-import ItemCard from '@/app/components/ItemCard'
 import ProductCart from '@/app/components/ProductCard'
 import { usePathname } from 'next/navigation'
 
-export default function  AdminItem() {
+export default function  UserItem() {
   const pathName = usePathname()
-  const id = pathName.split('admin/')[1]
+  const id = pathName.split('items/')[1]
  
   return (
   <>
     <Header />
-    <div className=''>
-        {/* <ItemCard id={`${id}`}/> */}
+    <div>
         <ProductCart id={`${id}`}/>
     </div>
+    <Footer />
   </>
   )
 }

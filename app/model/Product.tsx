@@ -7,3 +7,11 @@ export interface Product {
   prevPrice: string,
   newPrice: string
 }
+
+export interface NewProduct {
+  newPrice: string
+  prevPrice: string
+  reviews: string
+  title: string
+  img: string
+}

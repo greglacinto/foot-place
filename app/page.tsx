@@ -24,7 +24,7 @@ export default function Home(){
           className="flex basis-1/6 px-1 border-t-2 bg-foot-red-500"
         />
         <div className="space-x-4 mx-auto mt-10">
-          <Items className="flex basis-3/4 px-5"/>
+          <Items className="flex"/>
         </div>
       </div>
       

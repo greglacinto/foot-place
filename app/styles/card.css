@@ -20,18 +20,8 @@
   margin-bottom: 2rem; object-fit:cover;
 }
 
-.card-details {
-  /* position: absolute;
-  bottom: 0; */
-}
-
 .card-title {
-  margin-bottom: 1rem;
-}
-
-.card-reviews {
-  margin-bottom: 1rem;
-  display: flex;
+  margin-top: -1rem;
 }
 
 .rating-star {

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header(){
   return (
     <>
-      <div className="flex flex-row space-x-4 bg-foot-red-500 h-20 text-slate-100">
+      <div className="flex flex-row space-x-4  h-20 text-slate-950">
         {/* Page Div  */}
         <div className="flex basis-1/4 justify-center items-center">
           <Link href="/" className="font-bold text-xl">Foot King</Link>
@@ -23,7 +23,7 @@ export default function Header(){
 
             {/* --Search button-->  */}
             <button
-              className="relative z-[2] flex bg-foot-red items-center rounded-r-lg bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition 
+              className="relative z-[2] flex bg-foot-red items-center rounded-r-lg bg-foot-red-500 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition 
                 duration-150 ease-in-out hover:bg-foot-red-700 hover:shadow-lg focus:bg-foot-red-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-foot-red-600
                 active:shadow-lg"
               type="button"
@@ -55,6 +55,7 @@ export default function Header(){
           </div>
         </div>
       </div>
+      <hr />
     </>
   )
 }

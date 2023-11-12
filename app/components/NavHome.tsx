@@ -23,9 +23,7 @@ export default function Menu(props: Props){
 
   return (
   <div className={className}>
-    <div className="h-screen">
-      <div className="h-10"></div>
-      <div className="text-slate-100 space-y-4 ml-2">
+      <div className="space-y-4">
         <button 
           className={`  
             ${active=="corp"
@@ -35,7 +33,7 @@ export default function Menu(props: Props){
           `}
           onClick={() => handleClick('corp')}
         >
-          CORPORATE
+          Corporate
         </button>
 
         <button
@@ -47,7 +45,7 @@ export default function Menu(props: Props){
           `}
           onClick={() => handleClick('slips')}
         >
-          SLIPS
+          Slips
         </button>
 
         <button
@@ -59,7 +57,7 @@ export default function Menu(props: Props){
           `}
           onClick={() => handleClick('sandal')}
         >
-          SANDALS
+          Sandals
         </button>
 
         <button
@@ -71,12 +69,11 @@ export default function Menu(props: Props){
           `}
           onClick={() => handleClick('boot')}
         >
-          BOOTS
+          Boots
         </button>
 
         
       </div>
-    </div>
   </div>
   );
 }

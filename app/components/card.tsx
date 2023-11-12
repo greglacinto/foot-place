@@ -9,10 +9,10 @@ const Card = ({ index, img, title, reviews, prevPrice, newPrice }: any) => {
   return (
     <>
         <section 
-          className="grid grid-rows-2 grid-flow-col gap-2 hover:cursor-pointer"
-          onClick={()=> {router.push(`pages/items/${index}`)}}  
+          className="gap-2 h-80 justify-items-center">
+          <div className="card hover:cursor-pointer h-4/6 shadow-lg"
+            onClick={()=> {router.push(`pages/items/${index}`)}}
           >
-          <div className="card">
             <Image 
               priority={true}
               src={img} 
@@ -23,8 +23,8 @@ const Card = ({ index, img, title, reviews, prevPrice, newPrice }: any) => {
             />
           </div>
           
-          <div className="mx-auto">
-          <div className="">
+          
+          <div className="flex flex-col items-center">
             <h3 className="card-title">{title}</h3>
             
             <section className="card-price">
@@ -33,7 +33,6 @@ const Card = ({ index, img, title, reviews, prevPrice, newPrice }: any) => {
               </div>
             </section>
           </div>
-        </div>
         </section>
     </>
   );

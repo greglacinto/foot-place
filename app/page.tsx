@@ -14,21 +14,23 @@ export default function Home(){
   }
   
   return (
-    <>
-      <Header />
-      <div 
-        className="flex flex-row"
-      >
-        <NavHome 
-          active = { activeLink }
-          change = { handleState } 
-          className="flex basis-1/6 px-1 border-t-2 bg-foot-red-500"
-        />
-        <div className="space-x-4 mx-auto mt-10">
-          <Items className="flex"/>
+    <>  
+      <div className="font-sans font-semibold">
+        <Header />
+        <div 
+          className="mx-5 mx-auto flex flex-row text-slate-950 mt-10"
+        >
+          <NavHome 
+            active = { activeLink }
+            change = { handleState } 
+            className="flex basis-1/6 px-1 mt-4"
+          />
+          <div className="mx-auto">
+            <Items className="grid grid-cols-4"/>
+          </div>
         </div>
+        {/* <Footer /> */}
       </div>
-      <Footer />
     </>
     )
 }

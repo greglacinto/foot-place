@@ -23,10 +23,10 @@ export default function Home(){
           <NavHome 
             active = { activeLink }
             change = { handleState } 
-            className="flex basis-1/6 px-1 ml-2 mt-4"
+            className="flex basis-1/6 px-1 pl-6 mt-4"
           />
           <div className="mx-auto">
-            <Items className="grid grid-cols-4"/>
+            <Items className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"/>
           </div>
         </div>
         {/* <Footer /> */}

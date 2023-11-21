@@ -20,6 +20,7 @@ module.exports = {
           900: '#180101',
         },
         'dark': 'black',
+        'off': '#f6F6F7',
         'white': '#ffffff'
       },
     },

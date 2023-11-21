@@ -56,8 +56,6 @@ export default function Menu(props: Props){
             </div>
           )
         })}
-
-        
       </div>
   </div>
   );

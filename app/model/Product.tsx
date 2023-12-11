@@ -6,6 +6,7 @@ export interface Product {
   reviews: string,
   prevPrice: string,
   newPrice: string
+  description?: string
 }
 
 export interface NewProduct {
@@ -15,3 +16,4 @@ export interface NewProduct {
   title: string
   img: string
 }
+

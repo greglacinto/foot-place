@@ -1,5 +1,4 @@
 'use client'
-import Footer from '@/app/components/Footer'
 import Header from '@/app/components/Header'
 import ProductCart from '@/app/components/ProductCard'
 import { usePathname } from 'next/navigation'
@@ -11,10 +10,7 @@ export default function  UserItem() {
   return (
   <>
     <Header />
-    <div>
-        <ProductCart id={`${id}`}/>
-    </div>
-    <Footer />
+    <ProductCart id={`${id}`}/>
   </>
   )
 }

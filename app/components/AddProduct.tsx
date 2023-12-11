@@ -44,7 +44,7 @@ export default function AddProduct(){
   }
 
   return (
-    <div>
+    <div className="mx-auto">
       <h1 className="font-extrabold  mb-10">Add Product</h1>
       <form onSubmit={ handleSubmit(onSubmit) } className="w-full max-w-lg">
         <div className="flex flex-wrap -mx-3 mb-6">

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header(){
   return (
     <>
-      <div className="flex flex-row space-x-4 bg-foot-red-500 h-20 text-slate-100">
+      <div className="flex flex-row space-x-4  h-20 text-slate-950">
         {/* Page Div  */}
         <div className="flex basis-1/4 justify-center items-center">
           <Link href="/" className="font-bold text-xl">Foot King</Link>
@@ -23,8 +23,8 @@ export default function Header(){
 
             {/* --Search button-->  */}
             <button
-              className="relative z-[2] flex bg-foot-red items-center rounded-r-lg bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition 
-                duration-150 ease-in-out hover:bg-foot-red-700 hover:shadow-lg focus:bg-foot-red-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-foot-red-600
+              className="relative z-[2] flex bg-foot-red items-center rounded-r-lg bg-foot-red-500 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition 
+                duration-150 ease-in-out hover:bg-foot-red-400 hover:shadow-lg focus:bg-foot-red-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-foot-red-600
                 active:shadow-lg"
               type="button"
               id="button-addon1"
@@ -47,7 +47,7 @@ export default function Header(){
         <div className="flex basis-1/6 justify-center items-center">
           <div className="relative py-2 cursor-pointer -mt-4">
             <div className="t-0 absolute left-3">
-              <p className="flex h-2 w-2 items-center justify-center rounded-full bg-red-500 p-3 text-xs text-white">1</p>
+              <p className="flex h-2 w-2 items-center justify-center rounded-full bg-foot-red-500 hover:bg-foot-red-400 p-3 text-xs text-white">1</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="file: mt-4 h-6 w-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
@@ -55,6 +55,7 @@ export default function Header(){
           </div>
         </div>
       </div>
+      <hr />
     </>
   )
 }

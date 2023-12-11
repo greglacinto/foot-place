@@ -14,12 +14,15 @@ module.exports = {
       },
       colors: {
         'foot-red': {
+          400: '#940d0d',
           500: '#640909',
           600: '#530707',
           700: '#4f0202',
           900: '#180101',
+
         },
         'dark': 'black',
+        'off': '#f6F6F7',
         'white': '#ffffff'
       },
     },

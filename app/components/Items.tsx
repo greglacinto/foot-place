@@ -30,7 +30,6 @@ export default function Items({ className }: any){
 
   return (
     <div className={className}>
-      <div className='grid md:grid-cols-4 grid-cols-3 gap-1'>
         { products.map((item:Product, index) => {
           return (
             ( 
@@ -46,7 +45,6 @@ export default function Items({ className }: any){
             )
           )
         }) }
-      </div>
     </div>
   )
 }

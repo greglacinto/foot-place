@@ -40,7 +40,6 @@ export default function ProductCart({id}: any){
                     alt={item.title}
                     width={500}
                     height={500}
-                    className=""
                   />
               </div>
               <div className='lg:w-8/12 w-full px-3 h-full rounded flex flex-col lg:px-5'>

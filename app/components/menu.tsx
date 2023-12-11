@@ -1,7 +1,7 @@
 'use client'
 const menuStyle = {
-  btn: `hover:bg-foot-red-700 hover:p-0.2 hover:rounded-md hover:font-bold block active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300`,
-  activeBtn: `bg-foot-red-700 p-0.5 rounded-md block outline-none ring-4 focus:ring-violet-200`
+  btn: ``,
+  activeBtn: ``
 }
 
 interface Props  {
@@ -15,6 +15,16 @@ export default function Menu(props: Props){
   const change = props.change 
   const active = props.active 
 
+  const menuOptions = [
+    {
+      name: 'Products',
+      tag: 'products'
+    },
+    {
+      name: 'New Product',
+      tag: 'add-new'
+    }
+  ]
 
   function handleClick(value: string) {
     change(value)
@@ -22,37 +32,57 @@ export default function Menu(props: Props){
   }
 
   return (
-  <div className={className}>
-    <div className="h-screen">
-      <div className="h-10"></div>
-      <div className="text-slate-100 space-y-4 ml-2">
-        <button 
-          className={`  
-            ${active=="products"
-            ? `${menuStyle.activeBtn}`
-            : `${menuStyle.btn}`
-            }
-          `}
-          onClick={() => handleClick('products')}
-        >
-          Products
-        </button>
-
-        <button
-          className={`  
-            ${active=="add-new"
-            ? `${menuStyle.activeBtn}`
-            : `${menuStyle.btn}`
-            }
-          `}
-          onClick={() => handleClick('add-new')}
-        >
-          Add New
-        </button>
-
-        
+    <div className={className}>
+      <div className="space-y-4">
+        {menuOptions.map(item => {
+          return (
+            <div key={item.name}>
+              <button
+                className={`  
+                  ${active==`${item.tag}`
+                  ? `${menuStyle.activeBtn}`
+                  : `${menuStyle.btn}`
+                  }
+                `}
+                onClick={() => handleClick(`${item.tag}`)}
+              >
+                {item.name}
+              </button>
+            </div>
+          )
+        })}
       </div>
-    </div>
   </div>
+
+  // <div className={className}>
+  //   <div className="h-screen">
+  //     <div className="h-10"></div>
+  //     <div className="text-slate-100 space-y-4 ml-2">
+  //       <button 
+  //         className={`  
+  //           ${active=="products"
+  //           ? `${menuStyle.activeBtn}`
+  //           : `${menuStyle.btn}`
+  //           }
+  //         `}
+  //         onClick={() => handleClick('products')}
+  //       >
+  //         Products
+  //       </button>
+
+  //       <button
+  //         className={`  
+  //           ${active=="add-new"
+  //           ? `${menuStyle.activeBtn}`
+  //           : `${menuStyle.btn}`
+  //           }
+  //         `}
+  //         onClick={() => handleClick('add-new')}
+  //       >
+  //         Add New
+  //       </button>
+  //     </div>
+  //   </div>
+  // </div>
   );
 }

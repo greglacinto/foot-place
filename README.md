@@ -2,21 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://moore-foot.netlify.app/](https://moore-foot.netlify.app/) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+
+The Admin page is linked at [https://moore-foot.netlify.app/pages/admin](https://moore-foot.netlify.app/pages/admin)
+
+It has two modules, one to see maintained products and modify them. The other to Add New products.
+
 
 ## Learn More
 

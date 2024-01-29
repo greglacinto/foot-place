@@ -30,7 +30,7 @@ export default function ProductCart({id}: any){
     <>
     { prodData?.map(item => {
       return (
-        <div key={item.id} className='bg-white w-full px-20 py-10'>
+        <div key={item.id} className='bg-white w-full px-20 py-10 mt-10'>
           <div className='rounded-xl items-center justify-center shadow-2xl
             grid grid-cols-1 sm:grid-cols-2 gap-2 w-full'>
               <div>

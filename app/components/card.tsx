@@ -29,7 +29,7 @@ const Card = ({ index, img, title, reviews, prevPrice, newPrice }: any) => {
             
             <section className="card-price">
               <div className="price">
-                <del>{prevPrice}</del> {newPrice}
+                <del>${prevPrice}</del> ${newPrice}
               </div>
             </section>
           </div>
